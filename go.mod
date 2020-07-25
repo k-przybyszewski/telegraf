@@ -3,9 +3,11 @@ module github.com/influxdata/telegraf
 go 1.13
 
 require (
-	bitbucket.org/nadia/faceit-client v0.0.0-20200721055705-d3c79b9f982d
+	bitbucket.org/nadia/faceit-client v0.0.0-20200721203252-5b3a17a0082d
 	bitbucket.org/nadia/go-nadia v0.0.0-20200721082635-b0541c2f906b // indirect
-	bitbucket.org/nadia/ts-client v0.0.0-20200721070510-c124877e32e8
+	bitbucket.org/nadia/redis v0.0.0-20200721171316-6078e6c5bb1e // indirect
+	bitbucket.org/nadia/redis-client v0.0.0-20200724224530-c98f7f195bd4
+	bitbucket.org/nadia/ts-client v0.0.0-20200724100628-3cc483ca4806
 	cloud.google.com/go v0.53.0
 	cloud.google.com/go/datastore v1.1.0 // indirect
 	cloud.google.com/go/pubsub v1.2.0
@@ -96,6 +98,7 @@ require (
 	github.com/mdlayher/apcupsd v0.0.0-20190314144147-eb3dd99a75fe
 	github.com/miekg/dns v1.1.26
 	github.com/mitchellh/go-testing-interface v1.0.0 // indirect
+	github.com/mitchellh/mapstructure v1.3.3
 	github.com/multiplay/go-ts3 v1.0.1-0.20191016073628-e74853086850
 	github.com/naoina/go-stringutil v0.1.0 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.4
@@ -141,7 +144,7 @@ require (
 	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a
-	golang.org/x/sys v0.0.0-20200720211630-cb9d2d5c5666
+	golang.org/x/sys v0.0.0-20200722175500-76b94024e4b6
 	golang.org/x/text v0.3.3
 	golang.org/x/tools v0.0.0-20200317043434-63da46f3035e // indirect
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20200205215550-e35592f146e4

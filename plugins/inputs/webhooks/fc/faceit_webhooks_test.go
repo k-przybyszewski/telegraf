@@ -1,4 +1,4 @@
-package faceit
+package fc
 
 import (
 	"github.com/influxdata/telegraf/testutil"
@@ -9,6 +9,7 @@ import (
 	"testing"
 )
 
+//
 func postWebhooks(md *FilestackWebhook, eventBody string) *httptest.ResponseRecorder {
 	req, _ := http.NewRequest("POST", "/faceit", strings.NewReader(eventBody))
 	w := httptest.NewRecorder()

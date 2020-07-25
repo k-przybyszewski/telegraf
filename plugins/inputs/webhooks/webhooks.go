@@ -11,7 +11,7 @@ import (
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs"
 
-	"github.com/influxdata/telegraf/plugins/inputs/webhooks/faceit"
+	"github.com/influxdata/telegraf/plugins/inputs/webhooks/fc"
 	"github.com/influxdata/telegraf/plugins/inputs/webhooks/filestack"
 	"github.com/influxdata/telegraf/plugins/inputs/webhooks/github"
 	"github.com/influxdata/telegraf/plugins/inputs/webhooks/mandrill"
@@ -33,7 +33,7 @@ type Webhooks struct {
 
 	Github     *github.GithubWebhook
 	Filestack  *filestack.FilestackWebhook
-	Faceit   *faceit.FaceitWebhook
+	Faceit     *fc.FaceitWebhook
 	Mandrill   *mandrill.MandrillWebhook
 	Rollbar    *rollbar.RollbarWebhook
 	Papertrail *papertrail.PapertrailWebhook

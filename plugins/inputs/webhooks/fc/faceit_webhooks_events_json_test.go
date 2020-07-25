@@ -1,4 +1,4 @@
-package faceit
+package fc
 
 func DialogOpenJSON() string {
 	return `{

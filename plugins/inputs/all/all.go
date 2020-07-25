@@ -160,6 +160,7 @@ import (
 	_ "github.com/influxdata/telegraf/plugins/inputs/systemd_units"
 	_ "github.com/influxdata/telegraf/plugins/inputs/tail"
 	_ "github.com/influxdata/telegraf/plugins/inputs/tcp_listener"
+	_ "github.com/influxdata/telegraf/plugins/inputs/teamspeak"
 	_ "github.com/influxdata/telegraf/plugins/inputs/temp"
 	_ "github.com/influxdata/telegraf/plugins/inputs/tengine"
 	_ "github.com/influxdata/telegraf/plugins/inputs/tomcat"
