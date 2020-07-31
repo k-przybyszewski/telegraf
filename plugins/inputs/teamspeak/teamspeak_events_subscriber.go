@@ -13,5 +13,5 @@ func (vs *VirtualServer) NewEventsSubscriber() *EventsSubscriber {
 }
 
 func (es *EventsSubscriber) Subscribe(name string) error {
-
+	return nil
 }

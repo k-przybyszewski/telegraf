@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"os"
 	"sync"
 	"time"
 
@@ -162,6 +163,24 @@ func (vs *VirtualServer) Connect() error {
 	if err := vs.client.SetChannelCommander(true); err != nil {
 		return err
 	}
+
+	go func() {
+		ticker := time.NewTicker(time.Millisecond * 500)
+		for {
+			<-ticker.C
+
+			i, err := vs.client.Whoami()
+			if err != nil {
+				vs.logError("whoamI err", err)
+			}
+
+			if i.ServerStatus == "online" {
+				continue
+			}
+
+			os.Exit(1)
+		}
+	}()
 
 	redis.Cfg = &redis.Config{
 		Host: "10.0.0.1",

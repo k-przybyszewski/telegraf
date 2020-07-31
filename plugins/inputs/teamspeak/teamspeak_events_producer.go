@@ -58,7 +58,10 @@ func (e *EventsProducer) Start() error {
 				el.stop()
 				return
 			case n := <-el.client.Notifications():
-				el.log("New event: %s, (%v)", n.Type, n.Data)
+				not := nts.Notification(n)
+				if err := el.cache.Publish(fmt.Sprintf(DefaultPubSubChannelName, n.Type), not); err != nil {
+					el.logError("", err)
+				}
 			}
 		}
 	}(e)
@@ -85,6 +88,8 @@ func (e *EventsProducer) log(format string, args ...interface{}) {
 
 func (e *EventsProducer) logError(format string, err error, args ...interface{}) {
 	format = "[TS3][Events] E! " + format + ": %v!"
+
+	args = append(args, err)
 
 	if len(args) > 0 {
 		fmt.Printf(format, args)

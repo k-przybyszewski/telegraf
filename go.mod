@@ -3,11 +3,10 @@ module github.com/influxdata/telegraf
 go 1.13
 
 require (
-	bitbucket.org/nadia/faceit-client v0.0.0-20200721203252-5b3a17a0082d
-	bitbucket.org/nadia/go-nadia v0.0.0-20200721082635-b0541c2f906b // indirect
+	bitbucket.org/nadia/faceit-client v0.0.0-20200726232736-2ac626bafe97
 	bitbucket.org/nadia/redis v0.0.0-20200721171316-6078e6c5bb1e // indirect
-	bitbucket.org/nadia/redis-client v0.0.0-20200724224530-c98f7f195bd4
-	bitbucket.org/nadia/ts-client v0.0.0-20200724100628-3cc483ca4806
+	bitbucket.org/nadia/redis-client v0.0.0-20200726232757-215a37c36266
+	bitbucket.org/nadia/ts-client v0.0.0-20200726232632-4b9674c3864d
 	cloud.google.com/go v0.53.0
 	cloud.google.com/go/datastore v1.1.0 // indirect
 	cloud.google.com/go/pubsub v1.2.0
@@ -64,9 +63,9 @@ require (
 	github.com/gofrs/uuid v3.3.0+incompatible
 	github.com/gogo/protobuf v1.2.2-0.20190723190241-65acae22fc9d
 	github.com/golang/geo v0.0.0-20190916061304-5b978397cfec
-	github.com/golang/protobuf v1.3.5
+	github.com/golang/protobuf v1.4.2
 	github.com/goodsign/monday v1.0.0
-	github.com/google/go-cmp v0.4.0
+	github.com/google/go-cmp v0.5.0
 	github.com/google/go-github v17.0.0+incompatible
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/gorilla/mux v1.7.4
@@ -109,7 +108,6 @@ require (
 	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/opentracing-contrib/go-observer v0.0.0-20170622124052-a52f23424492 // indirect
-	github.com/opentracing/opentracing-go v1.0.2 // indirect
 	github.com/openzipkin/zipkin-go v0.1.6 // indirect
 	github.com/openzipkin/zipkin-go-opentracing v0.3.4
 	github.com/pkg/errors v0.9.1
@@ -124,7 +122,7 @@ require (
 	github.com/sirupsen/logrus v1.6.0
 	github.com/soniah/gosnmp v1.25.0
 	github.com/streadway/amqp v0.0.0-20180528204448-e5adc2ada8b8
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.6.1
 	github.com/tbrandon/mbserver v0.0.0-20170611213546-993e1772cc62
 	github.com/tedsuo/ifrit v0.0.0-20191009134036-9a97d0632f00 // indirect
 	github.com/thoas/go-funk v0.7.0
@@ -139,19 +137,18 @@ require (
 	github.com/yuin/gopher-lua v0.0.0-20180630135845-46796da1b0b4 // indirect
 	go.starlark.net v0.0.0-20191227232015-caa3e9aa5008
 	golang.org/x/crypto v0.0.0-20200709230013-948cd5f35899 // indirect
-	golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
 	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a
-	golang.org/x/sys v0.0.0-20200722175500-76b94024e4b6
+	golang.org/x/sys v0.0.0-20200724161237-0e2f3a69832c
 	golang.org/x/text v0.3.3
 	golang.org/x/tools v0.0.0-20200317043434-63da46f3035e // indirect
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20200205215550-e35592f146e4
 	gonum.org/v1/gonum v0.6.2 // indirect
 	google.golang.org/api v0.20.0
 	google.golang.org/genproto v0.0.0-20200317114155-1f3552e48f24
-	google.golang.org/grpc v1.28.0
+	google.golang.org/grpc v1.30.0
 	gopkg.in/fatih/pool.v2 v2.0.0 // indirect
 	gopkg.in/gorethink/gorethink.v3 v3.0.5
 	gopkg.in/ldap.v3 v3.1.0
